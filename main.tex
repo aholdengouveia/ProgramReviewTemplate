@@ -16,6 +16,16 @@
 \usepackage{csvsimple}
 \usepackage{pslatex}
 
+\usepackage{enumitem,amssymb}
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
+\hspace{-2.5pt}}
+\newcommand{\wontfix}{\rlap{$\square$}{\large\hspace{1pt}\xmark}}
+
 
 \title{Program Review - Networking Certificate Fall 2020}
 \shorttitle{Networking Certificate}
@@ -33,13 +43,18 @@
 \newpage
 \section{Basic Information}
 \input{BasicInfo.tex}
-
+%Basic info is complete as of Sept 25th 2020
 
 \section{Introduction}
-\input{Introduction.tex}
+%\input{Introduction.tex}
+%Introduction is complete as of Sept 25th 2020
+%uncomment when rest is done
 
 \section{SECTION I: ACCREDITATION APPROVAL CERTIFICATION}
 %\input{Section1.tex}
+%Section 1 is complete as of Sept 25th 2020
+%uncomment when rest is done
+
 
 \section{SECTION II: MISSION AND PURPOSES}
 %\input{Section2.tex}
